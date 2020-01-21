@@ -7,6 +7,7 @@ import data from '../mock/flow.json';
 import { NodePanel, EdgePanel, MultiPanel, CanvasPanel } from './Panel';
 import ItemPanels from './ItemPanels';
 import ContextMenus from './ContextMenus';
+import Commands from './Commands';
 import styles from './index.less';
 
 class Index extends React.Component {
@@ -14,7 +15,12 @@ class Index extends React.Component {
     return (
       <GGEditor className={styles.editor}>
         <ItemPanels />
-        <Flow className={styles.editorBd} data={data} />
+        <div className={styles.editorBd}>
+          <div className={styles.editorBdTd}>
+            <Commands />
+          </div>
+          <Flow className={styles.editorBdBd} data={data} />
+        </div>
         <div className={styles.editorFt}>
           <NodePanel />
           <EdgePanel />
