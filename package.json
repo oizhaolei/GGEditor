@@ -1,5 +1,5 @@
 {
-  "name": "gg-editor",
+  "name": "gg-editor-example",
   "version": "3.0.1",
   "description": "A visual graph editor based on G6 and React",
   "keywords": [
@@ -9,10 +9,6 @@
     "flow",
     "mind"
   ],
-  "main": "lib/index.js",
-  "unpkg": "dist/index.js",
-  "module": "es/index.js",
-  "types": "lib/index.d.ts",
   "files": [
     "dist",
     "lib",
@@ -20,8 +16,7 @@
     "src"
   ],
   "scripts": {
-    "start": "node ./scripts/start.js",
-    "build": "node ./scripts/build.js",
+    "start": "node ./start.js",
     "lint": "eslint --cache --ext .ts,.tsx ./src",
     "lint:fix": "npm run lint -- --fix",
     "pretty-quick": "pretty-quick",
@@ -34,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/GGEditor.git"
+    "url": "git+https://github.com/oizhaolei/GGEditor.git"
   },
   "author": {
     "name": "高力",
@@ -42,9 +37,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alibaba/GGEditor/issues"
+    "url": "https://github.com/oizhaolei/GGEditor/issues"
   },
-  "homepage": "https://github.com/alibaba/GGEditor#readme",
+  "homepage": "https://github.com/oizhaolei/GGEditor#readme",
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
@@ -52,6 +47,7 @@
   "dependencies": {
     "@antv/g6": "^3.2.1",
     "@babel/runtime": "^7.7.6",
+    "gg-editor": "^3.0.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {

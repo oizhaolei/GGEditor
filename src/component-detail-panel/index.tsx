@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GGEditor, { Flow, EditableLabel, ItemPopover } from '@/index';
+import GGEditor, { Flow, EditableLabel, ItemPopover } from 'gg-editor';
 import { Popover } from 'antd';
 
 import data from '../mock/flow.json';

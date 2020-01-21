@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { Command } from '@/index';
+import { Command } from 'gg-editor';
 import upperFirst from 'lodash/upperFirst';
 
 import { Divider, Tooltip } from 'antd';
-import { EditorCommand } from '@/common/constants/index.js';
+import { EditorCommand } from './common/constants/index.js';
 import IconFont from './IconFont';
 import styles from './index.less';
 

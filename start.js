@@ -15,11 +15,10 @@ const babel = require('rollup-plugin-babel');
 const json = require('rollup-plugin-json');
 const serve = require('rollup-plugin-serve');
 const livereload = require('rollup-plugin-livereload');
-const { version } = require('../package.json');
 /* eslint-enable */
 
 function start(name) {
-  const contentBase = `examples`;
+  const contentBase = `src`;
 
   // Clean
   // rimraf.sync(`${contentBase}/dist`);
@@ -46,12 +45,9 @@ function start(name) {
         },
       }),
       resolve(),
-      replace({
-        'process.env.GG_EDITOR_VERSION': JSON.stringify(version),
-      }),
       commonjs(),
       typescript({
-        tsconfig: 'examples/tsconfig.json',
+        tsconfig: './tsconfig.json',
       }),
       babel({
         exclude: 'node_modules/**',

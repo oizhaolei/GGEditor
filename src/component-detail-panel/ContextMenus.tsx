@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContextMenu } from '@/index';
+import { ContextMenu } from 'gg-editor';
 import { Menu } from 'antd';
 
 const ContextMenus = () => (

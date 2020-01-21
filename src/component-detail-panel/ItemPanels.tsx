@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, ItemPanel } from '@/index';
+import { Item, ItemPanel } from 'gg-editor';
 
 import styles from './index.less';
 
