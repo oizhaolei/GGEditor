@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "name": "typicode"
+  },
+  "comments": [
+    {
+      "postId": 1,
+      "body": "some comment",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "author": "typicode",
+      "title": "json-server",
+      "id": 1
+    }
+  ],
+  "flows": [
+    {
+      "edges": [
+        {
+          "target": "1",
+          "source": "0",
+          "label": "Label"
+        }
+      ],
+      "nodes": [
+        {
+          "y": 55,
+          "x": 55,
+          "label": "Node",
+          "id": "0"
+        },
+        {
+          "y": 255,
+          "x": 55,
+          "label": "Node",
+          "id": "1"
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
