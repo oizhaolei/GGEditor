@@ -22,9 +22,8 @@ function start(name) {
   const contentBase = `examples`;
 
   // Clean
-  rimraf.sync(`${contentBase}/dist`);
-
-  signale.success('Clean success');
+  // rimraf.sync(`${contentBase}/dist`);
+  // signale.success('Clean success');
 
   // Watch
   const watcher = rollup.watch({
@@ -86,19 +85,4 @@ function start(name) {
   });
 }
 
-const choices = fs.readdirSync('examples').filter(name => {
-  return !['mock', 'dist', 'index.html', 'index.d.ts', 'tsconfig.json', '.DS_Store'].includes(name);
-});
-
-inquirer
-  .prompt([
-    {
-      type: 'list',
-      name: 'name',
-      message: 'Which example do you want to run?',
-      choices,
-    },
-  ])
-  .then(({ name }) => {
-    start(name);
-  });
+start('component-detail-panel');
