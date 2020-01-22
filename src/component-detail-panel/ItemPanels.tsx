@@ -113,9 +113,9 @@ const ItemPanels = () => (
     <Item
       className={styles.item}
       model={{
-        shape: 'bizNode',
+        shape: 'bizFlowNode',
         size: [112, 66],
-        label: 'bizNode',
+        label: 'bizFlowNode',
         center: 'topLeft',
       }}
     >
